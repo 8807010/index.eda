@@ -338,10 +338,18 @@ template {
     display: none;
 }
 
-* {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-width: 320px;
 }
 
 .container {
@@ -354,6 +362,8 @@ template {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .header__auth {
@@ -362,6 +372,8 @@ template {
 
 .header__logo {
     margin-right: 76px;
+    width: 128px;
+    height: 58px;
 }
 
 .header__search {
@@ -370,9 +382,79 @@ template {
     border-radius: 10px;
     background-color: rgba(238, 238, 238, 0.71);
     max-width: 620px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    margin-right: 20px;
 }
 
 .header__search-input {
     background-color: transparent;
     border: none;
+    width: 100%;
+    padding: 13px 58px 13px 20px;
+    color: #57565b;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 143.7%;
+}
+
+.header__search-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 18px;
+    cursor: pointer;
+}
+
+.header__auth {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header__login {
+    background: #ebebeb;
+    border-radius: 50px;
+    padding: 16px 30px;
+}
+
+.header__login-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+}
+
+.header__shop {
+    width: 49px;
+    height: 49px;
+    background: #f66a15;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 30px;
+    position: relative;
+}
+
+.header__shop-count {
+    background: #ffaf19;
+    color: #000;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 112.5%;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
 }
