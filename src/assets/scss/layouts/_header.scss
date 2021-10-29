@@ -69,13 +69,12 @@
   &__shop {
     width: 49px;
     height: 49px;
-    background: #f66a15;
+    background: $primaryColor;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // @extend %flexCenter;
     margin-left: 30px;
     position: relative;
+    @include flex(center, center);
 
     &-count {
       background: #ffaf19;

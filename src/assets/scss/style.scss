@@ -1,3 +1,5 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
 @import '_normalize';
 
 
@@ -20,4 +22,6 @@ body {
     margin: 0 auto;
 }
 
-@import '_header';
+@import './layouts/_header';
+@import '_slider';
+@import './components/slide';
