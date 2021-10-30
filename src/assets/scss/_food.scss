@@ -1,0 +1,52 @@
+.food {
+  background: $backgroundColor;
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 72%;
+    color: $colorTextSecondary;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    margin-bottom: 62px;
+    display: flex;
+
+    &-link {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      color: #49494f;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+
+    &-item {
+      list-style-type: none;
+
+      &:not(:last-child) {
+        margin-right: 58px;
+      }
+    }
+  }
+
+  &__cards-item {
+      list-style-type: none;
+  }
+
+  &__cards-desc {
+      display: flex;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 220px;
+      overflow: hidden;
+    //   height: 100px;
+  }
+}

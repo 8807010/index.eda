@@ -551,7 +551,10 @@ body {
     overflow: hidden;
     object-fit: cover;
     box-sizing: content-box;
-    margin: 11px; }
+    margin: 11px;
+    transition: all 0.3s ease; }
+    .delivery__item:hover {
+      transform: scale(1.1); }
   .delivery__image {
     width: 100%;
     height: 100%;
@@ -577,3 +580,38 @@ body {
     color: #ffffff;
     padding: 5px 10px;
     background-color: #D68334; }
+
+.food {
+  background: #F6F6F6;
+  padding-top: 40px;
+  padding-bottom: 60px; }
+  .food__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 72%;
+    color: #000;
+    margin-bottom: 50px; }
+  .food__list {
+    margin-bottom: 62px;
+    display: flex; }
+    .food__list-link {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      color: #49494f;
+      transition: all 0.3s ease; }
+      .food__list-link:hover {
+        color: #F47322; }
+    .food__list-item {
+      list-style-type: none; }
+      .food__list-item:not(:last-child) {
+        margin-right: 58px; }
+  .food__cards-item {
+    list-style-type: none; }
+  .food__cards-desc {
+    display: flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 220px;
+    overflow: hidden; }
