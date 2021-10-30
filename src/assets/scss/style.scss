@@ -23,8 +23,10 @@ body {
     padding: 0 15px;
 }
 
-@import './layouts/_header';
-@import '_slider';
-@import './components/slide';
-@import '_offers';
+@import './layouts/_header.scss';
+@import '_slider.scss';
+@import './components/slide.scss';
+@import '_offers.scss';
 @import '_delivery.scss';
+@import '_food.scss';
+
