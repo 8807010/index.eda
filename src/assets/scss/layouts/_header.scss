@@ -53,16 +53,24 @@
   }
 
   &__login {
-    background: #ebebeb;
-    border-radius: 50px;
-    padding: 16px 30px;
-
+  
     &-link {
+      border-radius: 50px;
+      padding: 16px 30px;
+      background: #ebebeb;
+      display: flex;
+      width: 100%;
       text-decoration: none;
       color: #000;
       font-weight: 400;
       font-size: 14px;
       line-height: 114%;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $primaryColor;
+        color: $colorTextMain;
+      }
     }
   }
 
