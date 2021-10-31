@@ -1,3 +1,8 @@
+.footer__social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -734,3 +739,52 @@ body {
       text-align: center;
       color: #49494f;
       margin-bottom: 25px; }
+
+.footer {
+  background-color: #f6f6f6;
+  padding: 40px 0; }
+  .footer__logo {
+    margin-right: 50px; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .footer__nav-list {
+    display: flex; }
+  .footer__nav-item {
+    list-style-type: none; }
+    .footer__nav-item:not(:last-child) {
+      margin-right: 50px; }
+  .footer__nav-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 144%;
+    text-decoration: underline;
+    color: #000;
+    transition: all 0.3s ease; }
+    .footer__nav-link:hover {
+      color: #F47322;
+      text-decoration: none; }
+  .footer__social-list {
+    display: flex;
+    flex-direction: row; }
+  .footer__social-item {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    transition: all 0.3s ease; }
+    .footer__social-item:hover {
+      transform: scale(1.1);
+      background-color: #ffa66e; }
+    .footer__social-item:not(:last-child) {
+      margin-right: 20px; }
+  .footer__social-link {
+    padding: 5px; }
+  .footer__social-img {
+    display: flex; }
