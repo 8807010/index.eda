@@ -607,11 +607,81 @@ body {
       list-style-type: none; }
       .food__list-item:not(:last-child) {
         margin-right: 58px; }
-  .food__cards-item {
-    list-style-type: none; }
-  .food__cards-desc {
+  .food__cards {
     display: flex;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 220px;
-    overflow: hidden; }
+    margin: 0 -18px; }
+    .food__cards-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 62px; }
+    .food__cards-item {
+      list-style-type: none;
+      flex: 0 1 25%;
+      max-width: 270px;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #fff;
+      margin: 0 15px;
+      margin-bottom: 36px; }
+    .food__cards-title {
+      margin-bottom: 13px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 115%;
+      color: #000; }
+    .food__cards-desc {
+      display: flex;
+      margin-bottom: 36px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 164%;
+      color: #b9b9be;
+      max-height: 92px;
+      overflow: hidden; }
+    .food__cards-img {
+      max-width: 100%; }
+    .food__cards-info {
+      padding: 21px 24px; }
+  .food__more {
+    margin: 0 auto;
+    text-align: center; }
+    .food__more-btn {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 118%;
+      color: #f37321;
+      text-decoration: none;
+      padding: 16px 105px;
+      border: 2px solid #f37321;
+      border-radius: 33px; }
+
+.cards-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .cards-bottom__info {
+    display: flex;
+    flex-direction: column; }
+    .cards-bottom__info-cost {
+      display: block;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 100%;
+      color: #4b4b51;
+      margin-bottom: 5px; }
+    .cards-bottom__info-weight {
+      display: block;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 117%;
+      color: #aaaab1; }
+  .cards-bottom__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 118%;
+    color: #f37321;
+    border: 2px solid #f37321;
+    border-radius: 33px;
+    background-color: #fff;
+    padding: 16px 25px; }

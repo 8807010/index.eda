@@ -37,16 +37,115 @@
     }
   }
 
-  &__cards-item {
+  &__cards {
+    display: flex;
+    margin: 0 -18px;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 62px;
+    }
+
+    &-item {
       list-style-type: none;
+      flex: 0 1 25%;
+      max-width: 270px;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: $colorTextMain;
+      margin: 0 15px;
+      margin-bottom: 36px;
+    }
+
+    &-title {
+      margin-bottom: 13px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 115%;
+      color: $colorTextSecondary;
+    }
+
+    &-desc {
+      display: flex;
+      //   white-space: nowrap;
+      //   text-overflow: ellipsis;
+      //   width: 220px;
+      //   overflow: hidden;
+      //   height: 100px;
+      margin-bottom: 36px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 164%;
+      color: #b9b9be;
+      max-height: 92px;
+      overflow: hidden;
+    }
+
+    &-img {
+      max-width: 100%;
+    }
+
+    &-info {
+      padding: 21px 24px;
+    }
   }
 
-  &__cards-desc {
-      display: flex;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      width: 220px;
-      overflow: hidden;
-    //   height: 100px;
+  &__more {
+    margin: 0 auto;
+    text-align: center;
+
+    &-btn {
+      //   display: flex;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 118%;
+      color: #f37321;
+      text-decoration: none;
+      padding: 16px 105px;
+      border: 2px solid #f37321;
+      border-radius: 33px;
+      //   text-align: center;
+    }
+  }
+}
+
+.cards-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &-cost {
+      display: block;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 100%;
+      color: #4b4b51;
+      margin-bottom: 5px;
+    }
+
+    &-weight {
+      display: block;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 117%;
+      color: #aaaab1;
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 118%;
+    color: #f37321;
+    border: 2px solid #f37321;
+    border-radius: 33px;
+    background-color: $colorTextMain;
+    padding: 16px 25px;
   }
 }
