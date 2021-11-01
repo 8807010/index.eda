@@ -4,12 +4,34 @@
 
   &__logo {
     margin-right: 50px;
+    width: 205px;
+    height: 100px;
+
+    @media (max-width: 768px) {
+      margin-right: 25px;
+      width: 150px;
+      height: 70px;
+    }
+
+    &-img {
+      display: flex;
+      width: 100%;
+    }
+
+    &-link {
+      width: 100%;
+    }
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: right;
+    }
   }
 
   &__wrap {
@@ -21,10 +43,19 @@
   &__nav {
     &-list {
       display: flex;
+
+      @media (max-width: 620px) {
+        flex-direction: column;
+        text-align: left;
+      }
     }
 
     &-item {
       list-style-type: none;
+
+      @media (max-width: 620px) {
+        padding-bottom: 8px;
+      }
 
       &:not(:last-child) {
         margin-right: 50px;
@@ -50,6 +81,10 @@
     &-list {
       display: flex;
       flex-direction: row;
+
+      @media (max-width: 768px) {
+        padding-top: 30px;
+      }
     }
 
     &-item {

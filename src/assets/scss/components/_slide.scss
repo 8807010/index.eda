@@ -11,6 +11,10 @@
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 620px) {
+    padding-left: 40px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -72,8 +76,12 @@
   bottom: 40px;
   z-index: 2;
   width: 100px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .slider__btn {
-cursor: pointer;
+  cursor: pointer;
 }

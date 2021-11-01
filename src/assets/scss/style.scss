@@ -1,7 +1,6 @@
-@import './abstracts/variables';
-@import './abstracts/mixins';
-@import '_normalize';
-
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "_normalize";
 
 *,
 *::before,
@@ -13,22 +12,22 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  min-width: 320px;
 }
 
 .container {
-    max-width: 1194px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1194px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-@import './layouts/_header.scss';
-@import '_slider.scss';
-@import './components/slide.scss';
-@import '_offers.scss';
-@import '_delivery.scss';
-@import '_food.scss';
-@import '_benefits.scss';
-@import './layouts/_footer.scss';
-
+@import "./layouts/_header.scss";
+@import "_slider.scss";
+@import "./components/slide.scss";
+@import "_offers.scss";
+@import "_delivery.scss";
+@import "_food.scss";
+@import "_benefits.scss";
+@import "./layouts/_footer.scss";
+// @import '_media.scss';

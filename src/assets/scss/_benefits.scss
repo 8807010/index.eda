@@ -2,6 +2,10 @@
   padding-top: 100px;
   padding-bottom: 202px;
 
+  @media (max-width: 1200px) {
+    padding-bottom: 0;
+  }
+
   &__title {
     font-weight: 500;
     font-size: 32px;
@@ -36,6 +40,14 @@
 
       &:hover {
         transform: scale(1.1);
+      }
+
+      @media (max-width: 1000px) {
+        flex: 0 1 50%;
+      }
+
+      @media (max-width: 500px) {
+        flex: 0 1 100%;
       }
     }
 
