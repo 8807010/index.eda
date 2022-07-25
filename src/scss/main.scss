@@ -1,0 +1,46 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+
+//mixins
+@import "mixins/_mixins";
+@import "mixins/_variables";
+@import "mixins/_slide";
+
+//components
+@import "components/_footer";
+@import "components/_header";
+
+@import "vendor/normalize";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1194px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import "_slider";
+@import "_offers";
+@import "_delivery";
+@import "_food";
+@import "_benefits";
+// @import '_media';
