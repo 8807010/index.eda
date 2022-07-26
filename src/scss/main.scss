@@ -4,13 +4,9 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
-@import "./components/header";
-
 //mixins
 @import "mixins/_mixins";
 @import "mixins/_variables";
-@import "mixins/_slide";
 
 //components
 @import "components/_footer";
@@ -43,4 +39,6 @@ body {
 @import "_delivery";
 @import "_food";
 @import "_benefits";
+@import "_cards-bottom";
+@import "_slide";
 // @import '_media';

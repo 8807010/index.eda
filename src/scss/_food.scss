@@ -9,6 +9,10 @@
     line-height: 72%;
     color: $colorTextSecondary;
     margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -55,6 +59,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       margin-bottom: 62px;
+      justify-content: center;
     }
 
     &-item {
@@ -70,6 +75,8 @@
 
       @media (max-width: 1000px) {
         flex: 0 1 50%;
+        margin-bottom: 20px;
+
       }
 
       @media (max-width: 550px) {
@@ -87,11 +94,6 @@
 
     &-desc {
       display: flex;
-      //   white-space: nowrap;
-      //   text-overflow: ellipsis;
-      //   width: 220px;
-      //   overflow: hidden;
-      //   height: 100px;
       margin-bottom: 36px;
       font-weight: 500;
       font-size: 14px;
@@ -113,9 +115,13 @@
   &__more {
     margin: 0 auto;
     text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     &-btn {
-      //   display: flex;
       font-weight: 500;
       font-size: 16px;
       line-height: 118%;
@@ -124,7 +130,6 @@
       padding: 16px 105px;
       border: 2px solid #f37321;
       border-radius: 33px;
-      //   text-align: center;
     }
   }
 }
